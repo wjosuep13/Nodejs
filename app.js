@@ -24,7 +24,7 @@ var app = express();
 //}
 
 
-app.get('/:img',function(req,res,next) {
+app.get('/:img',function(req,res) {
     var img2 =req.params.img;
     
 	var newimg=img2.replace(/-/g,'/');
