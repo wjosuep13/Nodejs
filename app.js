@@ -10,7 +10,7 @@ const fs = require('fs');
  * @param  {string} base64str
  * @param  {string} filename
  */
-//function decode_base64(base64str, filename) {
+function decode_base64(base64str, filename) {
 //  let buf = Buffer.from(base64str, 'base64');
 
  // fs.writeFile(path.join(__dirname, '/public/', filename), buf, function(error) {
@@ -18,10 +18,10 @@ const fs = require('fs');
     //  throw error;
   //  } else {
    //   console.log('File created from base64 string!');
-    //  return true;
-   // }
-//  });
-//}
+      return true;
+   }
+ });
+}
 
 
 app.get('/:img',function(req,res) {
