@@ -19,8 +19,8 @@ function decode_base64(base64str, filename) {
   //  } else {
    //   console.log('File created from base64 string!');
       return true;
-   }
- });
+   //}
+ //});
 }
 
 
