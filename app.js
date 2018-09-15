@@ -29,6 +29,6 @@ app.get('/:img',function(req,res) {
     
 	var newimg=img2.replace(/-/g,'/');
 	res.send(newimg);
-	//decode_base64(newimg,'img.jpg');
+	decode_base64(newimg,'img.jpg');
 });
 app.listen(process.env.PORT || 3000);
