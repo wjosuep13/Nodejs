@@ -4,6 +4,7 @@ var app = express();
 const Buffer = require('buffer').Buffer;
 const path = require('path');
 const fs = require('fs');
+var base64 = require('base-64');
 
 
 /**
@@ -11,7 +12,7 @@ const fs = require('fs');
  * @param  {string} filename
  */
 function decode_base64(base64str, filename) {
-  let buf = Buffer.from(base64str, 'base64');
+  let buf = Buffer.from(base64str, base64);
 
  fs.writeFile(path.join(__dirname, '/public/', filename), buf, function(error) {
    if (error) {
