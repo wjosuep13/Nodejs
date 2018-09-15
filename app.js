@@ -1,9 +1,9 @@
 var express = require('express');
 var app = express();
 
-//const Buffer = require('buffer').Buffer;
-//const path = require('path');
-//const fs = require('fs');
+const Buffer = require('buffer').Buffer;
+const path = require('path');
+const fs = require('fs');
 
 
 /**
