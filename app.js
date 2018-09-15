@@ -5,9 +5,6 @@ const Buffer = require('buffer').Buffer;
 const path = require('path');
 const fs = require('fs');
 
-/**
- * @param  {string} filename
- */
 
 /**
  * @param  {string} base64str
